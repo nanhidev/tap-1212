@@ -18,6 +18,11 @@ package com.project.runner;
         }
     
     @Test(priority = 1)
+        public void runLoginscreenforrecruitersPos() {
+            runCucumberFeature("src/test/resources/com/tap-1212/features/LoginScreenForRecruiters_pos.feature");
+        }
+    
+    @Test(priority = 2)
         public void runOpencreatenewjobopeningfor() {
             runCucumberFeature("src/test/resources/com/tap-1212/features/OpenCreateNewJobOpeningFor.feature");
         }
