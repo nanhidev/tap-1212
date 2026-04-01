@@ -27,6 +27,11 @@ package com.project.runner;
             runCucumberFeature("src/test/resources/com/tap-1212/features/OpenCreateNewJobOpeningFor.feature");
         }
     
+    @Test(priority = 3)
+        public void runUploadnewcandidateprofilePo() {
+            runCucumberFeature("src/test/resources/com/tap-1212/features/UploadNewCandidateProfile_po.feature");
+        }
+    
             
     private void runCucumberFeature(String featurePath) {
             String featureName = new File(featurePath).getName().replace(".feature", "");
